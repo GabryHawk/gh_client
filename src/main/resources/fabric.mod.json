@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "gh_client",
+  "version": "${version}",
+  "name": "GH Client",
+  "description": "This is a modded client!",
+  "authors": [
+    "GabryHawk"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/gh_client/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.gabryhawk.tracer.GHClientInit"
+    ]
+  },
+  "mixins": [
+    "gh_client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
